@@ -1,0 +1,16 @@
+#addFile {
+    width:100%;
+    max-width:400px;
+}
+
+.custom-file-input:lang(en)~.custom-file-label::after {
+    content: "Выбрать";
+}
+
+#modal_create_overlay > p {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.tech_doc_comment {
+    white-space: pre-line;
+}

@@ -1,0 +1,7 @@
+a.manager_name_href {
+    color: #000000;
+}
+
+a.manager_name_href:hover {
+    color: #0056b3;
+}

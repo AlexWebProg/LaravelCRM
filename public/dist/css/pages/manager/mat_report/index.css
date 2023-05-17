@@ -1,0 +1,134 @@
+/* Общие стили таблицы */
+table.table.matReport {
+    font-size: .8rem;
+    width:100%;
+    border-left:none;
+    border-right:none;
+    border-color: #c1c5c9;
+}
+table.table.matReport thead th,
+table.table.matReport tfoot th,
+table.table.matReport tbody td {
+    text-align: center;
+    vertical-align: middle;
+    padding:.25rem .35rem;
+    line-height: 1.25;
+    border-color: #c1c5c9;
+}
+
+/* Фон левого столбца */
+table.dataTable thead tr>.dtfc-fixed-left {
+    background-color: #f2f2f2;
+}
+table.dataTable tbody tr>.dtfc-fixed-left {
+    z-index: 0;
+    background-color: #ffffff;
+}
+
+/* Шапка */
+table.table.matReport > thead > tr > th {
+    background-color: #f2f2f2;
+    border-top: none;
+    border-bottom: 2px solid #c1c5c9;
+}
+
+/* Футер */
+table.table.matReport > tfoot > tr > th {
+    background-color: #f2f2f2;
+}
+
+/* Убраны рамки вокруг таблицы */
+div.dataTables_scrollBody {
+    border: none !important;
+}
+table.table-bordered.matReport.dataTable th:last-child,
+table.table-bordered.matReport.dataTable td:last-child {
+    border-right-width: 0;
+}
+div.dataTables_scrollHeadInner table.matReport.table-bordered tr th:first-child {
+    border-left: none !important;
+}
+
+/* Дата */
+table.table.matReport > thead > tr > th.date,
+table.table.matReport > tbody > tr > td.date,
+table.table.matReport > tfoot > tr > th.date {
+    background-color: #ffffff;
+}
+
+/* Товары */
+table.table.matReport > thead > tr > th.goods,
+table.table.matReport > tbody > tr > td.goods,
+table.table.matReport > tfoot > tr > th.goods {
+    background-color: #f2f2f2;
+}
+
+/* Инструменты */
+table.table.matReport > thead > tr > th.tools,
+table.table.matReport > tbody > tr > td.tools,
+table.table.matReport > tfoot > tr > th.tools {
+    background-color: #fdefdd;
+}
+
+/* Автомобиль */
+table.table.matReport > thead > tr > th.auto,
+table.table.matReport > tbody > tr > td.auto,
+table.table.matReport > tfoot > tr > th.auto {
+    background-color: #ebe5fb;
+}
+
+/* Зарплата */
+table.table.matReport > thead > tr > th.salary,
+table.table.matReport > tbody > tr > td.salary,
+table.table.matReport > tfoot > tr > th.salary {
+    background-color: #fedbda;
+}
+
+/* Приход и передача */
+table.table.matReport > thead > tr > th.transfer,
+table.table.matReport > tbody > tr > td.transfer,
+table.table.matReport > tfoot > tr > th.transfer {
+    background-color: #def6fc;
+}
+
+/* Получено */
+table.table.matReport > thead > tr > th.received,
+table.table.matReport > tbody > tr > td.received,
+table.table.matReport > tfoot > tr > th.received {
+    background-color: #e0f9e0;
+}
+
+/* Итого столбцов */
+table.table.matReport > tfoot > tr > th.column_sum {
+    background-color: #e8f1fe;
+}
+
+/* Итого потрачено */
+table.table.matReport > tfoot > tr > th.total_spent {
+    background-color: #fcf3cf;
+}
+
+/* На маленьких экранах убираем пространство вокруг таблицы */
+@media (max-width: 991.98px) {
+    div.content-wrapper > section.content,
+    div.content-wrapper > section.content > div.container-fluid {
+        padding-left:0;
+        padding-right:0;
+    }
+}
+
+/* Блок кнопки экспорта в Excel */
+#table_buttons_block_content {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    white-space: nowrap;
+}
+@media (max-width: 767.98px){
+    #table_buttons_block_content {
+        margin-bottom: 1.25rem;
+        text-align: center;
+    }
+}
+.table_button {
+    padding:0.1rem 0.5rem;
+}

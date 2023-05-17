@@ -1,0 +1,85 @@
+/* Кнопка добавления задачи */
+#addTask {
+    width:100%;
+    max-width:400px;
+}
+
+/* Кнопка редактирования задачи */
+#tasks_list .task_edit_btn_block {
+    position: absolute;
+    top:0;
+    right:0;
+}
+#tasks_list .task_edit_btn > i,
+#tasks_list .viewed > i {
+    text-shadow: 0 0 1px rgba(0,0,0,.125),0 1px 3px rgba(0,0,0,.2);
+}
+#tasks_list .bg-gradient-danger .task_edit_btn,
+#tasks_list .bg-gradient-info .task_edit_btn,
+#tasks_list .bg-gradient-danger .viewed,
+#tasks_list .bg-gradient-info .viewed {
+    color:#ffffff;
+}
+#tasks_list .task_edit_btn:hover,
+#tasks_list .viewed:hover {
+    color: #0a53be;
+}
+#tasks_list .bg-gradient-danger .task_edit_btn:hover,
+#tasks_list .bg-gradient-danger .viewed:hover {
+    color: #0dcaf0;
+}
+
+/* Указатель - палец */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Файлы, прикреплённые к задачам - начало */
+#tasks_list .callout .task_image_block {
+    padding-bottom:15px;
+}
+
+#tasks_list .callout .task_image_block .task_image_item {
+    display:block;
+    max-width:100%;
+    height:auto;
+    border-radius: 0.25rem;
+    -webkit-filter: grayscale(0);
+    filter: none;
+    cursor:pointer;
+}
+
+#tasks_list .callout .task_image_block .task_image_item:hover {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+#tasks_list .callout.bg-gradient-danger .task_file_download_link,
+#tasks_list .callout.bg-gradient-info .task_file_download_link {
+    color: #ffffff;
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+#tasks_list .callout.callout-success .task_file_download_link {
+    color:#000000;
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+#tasks_list .callout .task_file_download_link:hover {
+    text-decoration: none;
+}
+
+#tasks_list .callout .task_image_block .task_file_remove_btn {
+    position: absolute;
+    top:5px;
+    right:12px;
+    z-index:1;
+    padding:0 0.25rem;
+}
+
+#tasks_list .callout .task_file_remove_filename_btn {
+    padding:0 0.25rem;
+}
+/* Файлы, прикреплённые к задачам - конец */

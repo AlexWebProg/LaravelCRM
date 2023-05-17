@@ -1,0 +1,8 @@
+@media (min-width: 768px) {
+    .client-delete-block {
+        position: absolute;
+        bottom:10px;
+        right:10px;
+    }
+}
+

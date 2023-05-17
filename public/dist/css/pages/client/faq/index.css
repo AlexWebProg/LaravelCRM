@@ -1,0 +1,35 @@
+.faq_text {
+    white-space: pre-wrap;
+}
+
+.faq_link {
+    display:block;
+    white-space: nowrap;
+    overflow:hidden;
+    max-width:200px;
+    text-overflow: ellipsis;
+}
+
+a.faq_question_link {
+    color: #0056b3;
+}
+
+.answer_toggle_icon {
+    position: absolute;
+}
+
+.faq_question_text {
+    padding-left:2.4rem;
+}
+
+.answer_toggle_icon i {
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    -ms-transition: -ms-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+}
+
+.answer_toggle_icon i.opened {
+    transform: rotate(180deg);
+    -ms-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+}

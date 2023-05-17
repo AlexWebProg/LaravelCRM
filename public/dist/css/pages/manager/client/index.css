@@ -1,0 +1,33 @@
+#clientsTable td {
+    vertical-align: middle;
+}
+
+/* Ячейка с адресом объекта */
+#clientsTable td.client-table-address {
+    position: relative;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+#clientsTable td.client-table-address:hover {
+    color: #0056b3;
+}
+
+/* Иконка об обновлении */
+#clientsTable td.client-table-address .client-table-badge {
+    padding: 3px 6px;
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius:50%;
+    box-shadow: 0 0 1px rgba(0,0,0,.125),0 1px 3px rgba(0,0,0,.2);
+}
+
+/* Иконка напоминания о чате */
+#clientsTable td.client-table-address .chat-remember-badge {
+    top:2px;
+    right:2px;
+    padding:0 4px;
+    box-shadow: 0 0 1px rgba(0,0,0,.125),0 1px 3px rgba(0,0,0,.2);
+}

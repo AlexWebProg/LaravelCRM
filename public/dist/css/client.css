@@ -1,0 +1,75 @@
+/* Закреплённая шапка */
+.main-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    z-index:1;
+}
+
+/* Кнопка наверх в шапке */
+.moveToTop{
+    max-width:220px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+@media (min-width: 768px) {
+    .moveToTop{
+        max-width:400px;
+    }
+}
+@media (min-width: 992px) {
+    .moveToTop{
+        max-width:550px;
+    }
+}
+
+/* Указатель - курсор */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Видео, встроенное в блок */
+.video-responsive{
+    display:block;
+    max-width:100%;
+    height:auto
+}
+
+/* Имя заказчика с адресом в сайдбаре */
+.sidebar .user-panel.user_panel_with_address > .image {
+    align-self: center;
+}
+.sidebar .user-panel.user_panel_with_address > .info {
+    padding: 0 0 0 10px;
+    color:#d0d4db;
+    white-space: normal;
+    line-height: 1.1;
+}
+
+/* ----------- Отображение файла начало ----------- */
+.file_embed_card_body {
+    margin:0;
+    padding:0;
+    height:calc(100vh - 60px);
+}
+
+.file_embed_iframe {
+    width:100%;
+    height:calc(100vh - 60px);
+    border: none;
+    margin:0;
+    padding:0;
+}
+/* ----------- Отображение файла окончание ----------- */
+
+/* ----------- Выбор файла на русском языке ----------- */
+.custom-file-input:lang(en) ~ .custom-file-label::after {
+    content: "Выбрать";
+}
+
+/* Текст с новыми строками */
+.text_pre_line {
+    white-space: pre-line;
+}

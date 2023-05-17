@@ -1,0 +1,175 @@
+/* Закреплённая шапка */
+.main-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    z-index:2;
+}
+
+/* Расположение flex-элемента вверху */
+.align-self-start {
+    align-self: start;
+}
+
+/* Кнопка наверх в шапке */
+.moveToTop{
+    max-width:220px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+@media (min-width: 768px) {
+    .moveToTop{
+        max-width:400px;
+    }
+}
+@media (min-width: 992px) {
+    .moveToTop{
+        max-width:550px;
+    }
+}
+
+/* Указатель - курсор */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Таблица DataTable на всю ширину card */
+.card-body.pl-0.pr-0 .dataTables_filter,
+.card-body.pl-0.pr-0 .dataTables_info {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+/* Форма с сортируемыми строками (например, Параметры подписок) - Начало */
+.form_sortable_rows_header {
+    border-bottom: 2px solid #dee2e6;
+    font-weight: bold;
+    padding: 0.75rem 0;
+}
+
+.form_sortable_rows > div.row {
+    vertical-align:middle;
+    padding: 0.75rem 0;
+}
+.form_sortable_rows > div.row > div,
+.form_sortable_rows > div.row > div > .checkbox-ios {
+    line-height:28px;
+}
+
+.form_sortable_rows > div.row.sorting_now {
+    background-color:rgba(255,255,255, 0.8);
+}
+
+.add_item_button_block {
+    border-top: 1px solid #dee2e6;
+    padding: 0.75rem 0 0 0;
+}
+/* Форма с сортируемыми строками (например, Параметры подписок) - Конец */
+
+/* Блок кнопок формы внизу экрана появляющийся при изменении полей - Начало */
+#form_actions {
+    bottom: -80px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 1032;
+    background-color: #fff;
+    border-top: 1px solid #dee2e6;
+    color: #869099;
+    padding: 1rem;
+    margin-left:250px;
+    transition: margin-left, bottom .3s ease-in-out;
+}
+
+body.sidebar-collapse #form_actions {
+    margin-left: 4.6rem;
+}
+
+@media (max-width: 991.98px){
+    #form_actions,
+    body.sidebar-collapse #form_actions {
+        margin-left: 0;
+    }
+}
+/* Блок кнопок формы внизу экрана появляющийся при изменении полей - Конец */
+
+/* Видео, встроенное в блок */
+.video-responsive{
+    display:block;
+    max-width:100%;
+    height:auto
+}
+
+/* Хлебные крошки в одну строку */
+.one_line_breadcrumb li {
+    max-width:50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* ----------- Отображение файла начало ----------- */
+.file_embed_card_body {
+    margin:0;
+    padding:0;
+    height:calc(100vh - 60px);
+}
+
+.file_embed_iframe {
+    width:100%;
+    height:calc(100vh - 60px);
+    border: none;
+    margin:0;
+    padding:0;
+}
+/* ----------- Отображение файла окончание ----------- */
+
+/* ----------- Popover "Просмотрено": начало ----------- */
+.viewed_popover .popover-body {
+    padding-top:0;
+    padding-bottom:0;
+}
+.viewed_popover .popover-body .viewed_popover_header {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-left:-0.75rem;
+    margin-right:-0.75rem;
+    padding-left:0.75rem;
+    padding-right:0.75rem;
+    cursor:pointer;
+}
+.viewed_popover .popover-body .viewed_popover_header.viewed_popover_header_viewed {
+    border-radius: 0.3rem 0.3rem 0 0 !important;
+}
+.viewed_popover .popover-body .viewed_popover_header.viewed_popover_header_unviewed {
+    border-top-width: 1px !important;
+}
+.viewed_popover .popover-body .viewed_popover_header.viewed_popover_header_unviewed.viewed_popover_header_unviewed_collapsed {
+    border-radius: 0 0 0.3rem 0.3rem !important;
+}
+.viewed_popover .popover-body ul li.list-group-item:not(.viewed_popover_header):has(+ li.list-group-item.viewed_popover_header.viewed_popover_header_unviewed) {
+    border-bottom: 0 !important;
+}
+.viewed_popover .popover-body .viewed_popover_header i {
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    -ms-transition: -ms-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+}
+.viewed_popover .popover-body .viewed_popover_header i.opened {
+    transform: rotate(180deg);
+    -ms-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+}
+/* ----------- Popover "Просмотрено": окончание ----------- */
+
+/* ----------- Выбор файла на русском языке ----------- */
+.custom-file-input:lang(en) ~ .custom-file-label::after {
+    content: "Выбрать";
+}
+
+/* Текст с новыми строками */
+.text_pre_line {
+    white-space: pre-line;
+}

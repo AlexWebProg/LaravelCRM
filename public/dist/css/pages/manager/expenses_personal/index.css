@@ -1,0 +1,16 @@
+.timeline::before {
+    left: 13px;
+}
+
+.timeline>div>.fa, .timeline>div>.fab, .timeline>div>.fad, .timeline>div>.fal, .timeline>div>.far, .timeline>div>.fas, .timeline>div>.ion, .timeline>div>.svg-inline--fa {
+    left: 0;
+}
+
+.timeline>div>.timeline-item {
+    margin-left: 42px;
+    margin-right: 0;
+}
+
+.timeline>div>.timeline-item > span.time > a.btn-xs {
+    padding: 0.125rem 0.3rem;
+}

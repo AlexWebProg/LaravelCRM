@@ -1,0 +1,18 @@
+a.template_name_href {
+    color: #000000;
+}
+
+a.template_name_href:hover {
+    color: #0056b3;
+}
+
+td.intro {
+    max-width:150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#templatesTable tbody td {
+    vertical-align: middle;
+}

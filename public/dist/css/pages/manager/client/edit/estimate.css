@@ -1,0 +1,22 @@
+/* ----------- Загрузка сметы начало ----------- */
+.dropzone .dz-preview.dz-image-preview {
+    background: transparent;
+}
+
+.dropzone .dz-preview .dz-error-message {
+    color: #ffffff;
+}
+
+.dropzone .dz-preview .dz-error-message {
+    top: 150px!important;
+}
+/* ----------- Загрузка сметы окончание ----------- */
+
+@media (max-width: 400px) {
+    .card > .card-header.long-text {
+        line-height: 1;
+    }
+    .card > .card-header.long-text > h3.card-title {
+        font-size:.9rem;
+    }
+}

@@ -1,0 +1,11 @@
+/* Общий отступ страницы */
+#map_content {
+    padding-left:0;
+    padding-right:1px;
+}
+
+/* Список объектов рядом с картой */
+#client-list {
+    height:calc(100vh - 50px);
+    overflow-x: scroll;
+}

@@ -1,0 +1,33 @@
+#files_preview_block {
+    display:none;
+    padding:15px;
+    overflow-y:scroll;
+    max-height:220px;
+}
+
+.file_preview_item_block {
+    display:inline-block;
+    position:relative;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.file_preview {
+    height:auto;
+    width:100px;
+    border-radius: 0.25rem;
+    vertical-align:top;
+    border: 1px solid #dee2e6;
+}
+
+.file_preview_item_remove_btn {
+    position: absolute;
+    top:5px;
+    right:5px;
+    z-index:1;
+    padding:0 0.25rem;
+}
+
+.file_preview_item_remove_filename_btn {
+    padding:0 0.25rem;
+}

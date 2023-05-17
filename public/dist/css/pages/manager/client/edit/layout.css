@@ -1,0 +1,9 @@
+/* Иконка напоминания о чате */
+.badge.chat-remember-badge {
+    top:50%;
+    transform: translateY(-50%);
+    left:4px;
+    right:auto;
+    padding:0 4px;
+    box-shadow: 0 0 1px rgba(0,0,0,.125),0 1px 3px rgba(0,0,0,.2);
+}

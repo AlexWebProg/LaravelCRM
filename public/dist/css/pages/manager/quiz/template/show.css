@@ -1,0 +1,21 @@
+.ratingChart {
+    min-height: 150px;
+    height: 150px;
+    max-height: 150px;
+    max-width: 100%;
+}
+
+.answer_client_href {
+    color: #000000;
+    border-bottom: 1px dashed;
+    cursor:pointer;
+}
+
+.answer_client_href:hover {
+    color: #0056b3;
+    border-color: #FF9933;
+}
+
+.answer_hr {
+    margin: 1.25rem -1.25rem;
+}

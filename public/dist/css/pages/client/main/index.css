@@ -1,0 +1,31 @@
+/* Иконки в ссылках */
+.small-box .icon {
+    display: block;
+}
+
+/* Иконка об обновлении */
+.small-box-badge {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 4px 10px;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    border-radius:50%;
+    box-shadow: 0 0 1px rgba(0,0,0,.125),0 1px 3px rgba(0,0,0,.2);
+}
+
+.small-box .inner {
+    height:114px;
+}
+
+.small-box h3.small-box-header {
+    white-space: normal;
+    color:#000000;
+}
+
+@media (max-width: 576px) {
+    .small-box h3.small-box-header {
+        font-size: 1.2rem;
+    }
+}

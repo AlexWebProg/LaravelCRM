@@ -1,0 +1,33 @@
+/* ----------- Список фото в папке начало ----------- */
+
+#photo_list .thumb img,
+#photo_list .thumb video {
+    -webkit-filter: grayscale(0);
+    filter: none;
+    background-color: #fff;
+    display:block;
+    max-width:100%;
+    height:auto;
+    border-radius:.25rem .25rem 0 0;
+}
+
+#photo_list .thumb img:hover,
+#photo_list .thumb video:hover {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+#photo_list .thumb {
+    padding: 5px;
+}
+
+.swal-overlay{
+    z-index:99999 !important;
+}
+
+.fancybox__thumbs,
+.fancybox__button--thumbs {
+    display: none;
+}
+
+/* ----------- Список фото в папке окончание ----------- */

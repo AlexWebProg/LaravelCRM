@@ -1,0 +1,21 @@
+/* Убрано всё лишнее со страницы чата при печати */
+@media print {
+    .content,
+    .container-fluid {
+        padding:0 !important;
+    }
+
+    #client_edit_form > .card-header,
+    #form_actions,
+    #add_message_block,
+    footer.main-footer {
+        display: none;
+    }
+    .my_message,
+    .foreign_message {
+        break-inside: avoid;
+    }
+    #print_header {
+        display: block !important;
+    }
+}

@@ -1,0 +1,23 @@
+/* Комментарии к смете - начало */
+#estimate_comment {
+    white-space: pre-line;
+}
+#estimate_comment a {
+    text-decoration:underline;
+    display:block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#estimate_comment a:hover {
+    text-decoration:none;
+}
+/* Комментарии к смете - окончание */
+
+@media (max-width: 400px) {
+    .card > .card-header.long-text {
+        line-height: 1;
+    }
+    .card > .card-header.long-text > h3.card-title {
+        font-size:.9rem;
+    }
+}

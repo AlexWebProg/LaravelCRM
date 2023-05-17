@@ -1,0 +1,209 @@
+/* Общие стили таблицы */
+table.table.clientSummary {
+    font-size: .8rem;
+    width:100%;
+    border-left:none;
+    border-right:none;
+    border-color: #c1c5c9;
+}
+table.table.clientSummary thead th,
+table.table.clientSummary tfoot th,
+table.table.clientSummary tbody td {
+    text-align: center;
+    vertical-align: middle;
+    padding:.25rem .35rem;
+    line-height: 1.25;
+    border-color: #c1c5c9;
+}
+
+/* Фон левого столбца */
+table.dataTable thead tr>.dtfc-fixed-left {
+    background-color: #f2f2f2;
+}
+table.dataTable tbody tr>.dtfc-fixed-left {
+    z-index: 0;
+    background-color: #ffffff;
+}
+table.dataTable tbody tr.in_process>.dtfc-fixed-left {
+    background-color: #e0f9e0;
+}
+table.dataTable tbody tr.two_month_before_deadline>.dtfc-fixed-left {
+    background-color: #fcfbd9;
+}
+table.dataTable tbody tr.one_month_before_deadline>.dtfc-fixed-left {
+    background-color: #fcd9d9;
+}
+
+/* Предупреждения об остатке */
+.expense_warning {
+    display: block;
+    font-weight:normal;
+    font-size: 100%;
+}
+
+/* Шапка */
+table.table.clientSummary > thead > tr > th {
+    background-color: #f2f2f2;
+    border-top: none;
+    border-bottom: 2px solid #c1c5c9;
+}
+
+/* Футер */
+table.table.clientSummary > tfoot > tr > th {
+    background-color: #f2f2f2;
+}
+
+/* Работа начата */
+table.table.clientSummary > tbody > tr.in_process > td {
+    background-color: #e0f9e0;
+}
+
+/* Два месяца до окончания */
+table.table.clientSummary > tbody > tr.two_month_before_deadline > td {
+    background-color: #fcfbd9;
+}
+
+/* Один месяц до окончания */
+table.table.clientSummary > tbody > tr.one_month_before_deadline > td {
+    background-color: #fcd9d9;
+}
+
+/* Объекты на гарантии */
+table.table.clientSummary > tbody > tr.ob_status_2 > td {
+    background-color: #def6fc;
+}
+
+/* Объекты для тестирования и демо */
+table.table.clientSummary > tbody > tr.test_objects > td {
+    background-color: #ebe5fb;
+}
+
+/* Подзаголовок в таблице */
+table.table.clientSummary > tbody > tr.sub_header > td {
+    background-color: #f2f2f2;
+}
+
+/* Ячейка с адресом объектв */
+table.table.clientSummary > tbody > tr > td.client-table-address {
+    position: relative;
+    padding-right: 30px;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+table.table.clientSummary > tbody > tr.in_process > td.client-table-address {
+    background-color: #e0f9e0;
+}
+table.table.clientSummary > tbody > tr.two_month_before_deadline > td.client-table-address {
+    background-color: #fcfbd9;
+}
+table.table.clientSummary > tbody > tr.one_month_before_deadline > td.client-table-address {
+    background-color: #fcd9d9;
+}
+table.table.clientSummary > tbody > tr.ob_status_2 > td.client-table-address {
+    background-color: #def6fc;
+}
+table.table.clientSummary > tbody > tr.test_objects > td.client-table-address {
+    background-color: #ebe5fb;
+}
+.table.table.clientSummary > tbody > tr > td.client-table-address:hover {
+    color: #0056b3;
+}
+
+/* Иконка об обновлении */
+.table.table.clientSummary > tbody > tr > td.client-table-address > .client-table-badge {
+    padding: 3px 6px;
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius:50%;
+    box-shadow: 0 0 1px rgba(0,0,0,.125),0 1px 3px rgba(0,0,0,.2);
+}
+
+/* Иконка напоминания о чате */
+.table.table.clientSummary > tbody > tr > td.client-table-address > .chat-remember-badge {
+    top:2px;
+    right:2px;
+    padding:0 4px;
+    box-shadow: 0 0 1px rgba(0,0,0,.125),0 1px 3px rgba(0,0,0,.2);
+}
+
+/* Перенос строк в редактируемых ячейках */
+.table.table.clientSummary tbody td.editable {
+    white-space: pre-line;
+    cursor: text;
+}
+
+/* Редактируемая ячейка выделена */
+.table.table.clientSummary tbody td.editable.clicked {
+    border:1px solid #007bff;
+}
+
+/* Редактируемая ячейка при открытой textarea */
+.table.table.clientSummary tbody td.editing {
+    padding:0;
+    position:relative;
+}
+
+/* Редактирование текста в ячейке */
+.table.table.clientSummary tbody td.editable.editing #cell_editing {
+    width:130%;
+    min-width: 130px;
+    height:calc(100% + 2px);
+    position: absolute;
+    top: -1px;
+    left: min(-20px, -15%);
+    background-color: #f4f6f9;
+    border:1px solid #007bff;
+    border-radius:5px;
+    z-index:3;
+    box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+}
+.table.table.clientSummary tbody td.editable.editing #cell_editing textarea {
+    width:100%;
+    height:calc(100% - 38px);
+    min-height:calc(100% - 38px);
+    resize: none;
+    overflow: hidden;
+    border:none;
+    outline: none;
+    border-radius:5px;
+    padding:0 5px;
+}
+
+/* Убраны рамки вокруг таблицы */
+div.dataTables_scrollBody {
+    border: none !important;
+}
+table.table-bordered.clientSummary.dataTable th:last-child,
+table.table-bordered.clientSummary.dataTable td:last-child {
+    border-right-width: 0;
+}
+div.dataTables_scrollHeadInner table.clientSummary.table-bordered tr th:first-child {
+    border-left: none !important;
+}
+
+/* На маленьких экранах убираем пространство вокруг таблицы */
+@media (max-width: 991.98px) {
+    div.content-wrapper > section.content,
+    div.content-wrapper > section.content > div.container-fluid {
+        padding-left:0;
+        padding-right:0;
+    }
+}
+
+/* Блок кнопки экспорта в Excel */
+#table_buttons_block_content {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    white-space: nowrap;
+}
+@media (max-width: 767.98px){
+    #table_buttons_block_content {
+        margin-bottom: 1.25rem;
+        text-align: center;
+    }
+}
+.table_button {
+    padding:0.1rem 0.5rem;
+}

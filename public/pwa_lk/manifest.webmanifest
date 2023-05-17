@@ -1,0 +1,31 @@
+{
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "start_url": "https://lk.dreamcompany.ru",
+    "name": "КомпанияМечты ЛК",
+    "short_name": "КомпанияМечты ЛК",
+    "description": "КомпанияМечты личный кабинет",
+    "icons": [
+        {
+            "src": "/pwa_lk/lk_192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/pwa_lk/lk_256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/pwa_lk/lk_384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/pwa_lk/lk_512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

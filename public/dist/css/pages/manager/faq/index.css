@@ -1,0 +1,15 @@
+#faqsTable td {
+    vertical-align: middle;
+}
+
+.faq_text {
+    white-space: pre-wrap;
+}
+
+.faq_link {
+    display:block;
+    white-space: nowrap;
+    overflow:hidden;
+    max-width:200px;
+    text-overflow: ellipsis;
+}

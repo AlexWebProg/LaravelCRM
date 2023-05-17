@@ -1,0 +1,11 @@
+a.survey_name_href {
+    color: #000000;
+}
+
+a.survey_name_href:hover {
+    color: #0056b3;
+}
+
+#surveysTable tbody td {
+    vertical-align: middle;
+}

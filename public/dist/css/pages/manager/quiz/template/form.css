@@ -1,0 +1,17 @@
+#questions .question.sorting_now {
+    background-color:rgba(255,255,255, 0.8);
+}
+
+#questions .question .question_hr {
+    margin: 1.25rem -1.25rem;
+}
+
+#questions .question:last-of-type .question_hr {
+    display:none;
+}
+
+#questions .question .question_buttons {
+    position: absolute;
+    top:0;
+    right:0;
+}
